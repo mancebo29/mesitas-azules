@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="main-container">
+
+  <div class="image-container">
+    <img src="cursed/cursed_1.jpg" class="cursed" />
+    <img src="cursed/cursed_2.png" class="cursed" />
+    <img src="cursed/cursed_3.jpg" class="cursed" />
+    <img src="cursed/cursed_4.jpeg" class="cursed" />
+  </div>
+
+</div>
+  <!-- Add your site or application content here -->
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+<style>
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+  }
+
+  .image-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+  }
+
+  .cursed {
+    border-radius: 50%;
+    height: 48vw;
+    width: 48vw;
+    object-fit: cover;
+    margin: 0.6em 0;
+  }
+
+</style>
+
+</html>
