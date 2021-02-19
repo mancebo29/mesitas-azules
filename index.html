@@ -11,107 +11,50 @@
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-<div class="title-container">
-  <h1 class="ml6">
-  <span class="text-wrapper">
-    <span class="letters">Los que están más buenos según las mujeres</span>
-  </span>
-  </h1>
-</div>
-
 <div class="main-container">
-  <div class="winners">
-    <div class="winner-entry">
-      <div class="winner-pic">
-        <img
-          src="./img/richard.jpg"/>
-      </div>
-      <div class="winner-info">
-        <div class="winner-name">
-          Richard Gonzalez
-        </div>
-        <div class="winner-points">
-          69 puntos
-        </div>
-      </div>
-    </div>
-    <div class="winner-entry">
-      <div class="winner-pic">
-        <img
-          src="./img/richard.jpg"/>
-      </div>
-      <div class="winner-info">
-        <div class="winner-name">
-          El que no existe
-        </div>
-        <div class="winner-points">
-          420 puntos
-        </div>
-      </div>
-    </div>
-    <div class="winner-entry">
-      <div class="winner-pic">
-        <img
-          src="./img/richard.jpg"/>
-      </div>
-      <div class="winner-info">
-        <div class="winner-name">
-          Por qué el que tiene más puntos está de segundo?
-        </div>
-        <div class="winner-points">
-          42 puntos
-        </div>
-      </div>
-    </div>
-    <div class="winner-entry">
-      <div class="winner-pic">
-        <img
-          src="./img/richard.jpg"/>
-      </div>
-      <div class="winner-info">
-        <div class="winner-name">
-          No sé cómo gané
-        </div>
-        <div class="winner-points">
-          -420 puntos
-        </div>
-      </div>
-    </div>
-    <div class="winner-entry">
-      <div class="winner-pic">
-        <img
-          src="./img/richard.jpg"/>
-      </div>
-      <div class="winner-info">
-        <div class="winner-name">
-          Hola mamá
-        </div>
-        <div class="winner-points">
-          3.1415926 puntos
-        </div>
-      </div>
-    </div>
-
-  </div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th colspan="5">Según</th>
+    </tr>
+    <tr>
+      <th colspan="2"></th>
+      <th>Mujeres</th>
+      <th>Hombres</th>
+      <th>Todos</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td class="bold" rowspan="4">Top</td>
+    </tr>
+    <tr>
+      <td class="bold">Hombres</td>
+      <td class="special"><a href="results.html?top=hombres&source=mujeres">Resultados</a></td>
+      <td><a href="results.html?top=hombres&source=hombres">Resultados</a></td>
+      <td><a href="results.html?top=hombres&source=todos">Resultados</a></td>
+    </tr>
+    <tr>
+      <td class="bold">Mujeres</td>
+      <td><a href="results.html?top=mujeres&source=mujeres">Resultados</a></td>
+      <td class="special"><a href="results.html?top=mujeres&source=hombres">Resultados</a></td>
+      <td><a href="results.html?top=mujeres&source=todos">Resultados</a></td>
+    </tr>
+    <tr>
+      <td class="bold">Mixtos</td>
+      <td><a href="results.html?top=mixto&source=mujeres">Resultados</a></td>
+      <td><a href="results.html?top=mixto&source=hombres">Resultados</a></td>
+      <td class="special"><a href="results.html?top=mixto&source=todos">Resultados</a></td>
+    </tr>
+    </tbody>
+  </table>
 </div>
 <!-- Add your site or application content here -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="js/vendor/modernizr-3.11.2.min.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
 
 <script>
   window.ga = function () {
@@ -136,12 +79,12 @@
       duration: 2000,
       delay: (el, i) => 60 * i
     }).add({
-      targets: '.winner-entry',
-      translateY: ["100vh", 0],
-      duration: 2000,
-      easing: "easeOutExpo",
-      delay: (el, i) => 100 * i
-    });
+    targets: '.winner-entry',
+    translateY: ["100vh", 0],
+    duration: 2000,
+    easing: "easeOutExpo",
+    delay: (el, i) => 100 * i
+  });
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
@@ -151,83 +94,33 @@
     background-color: #131313;
   }
 
-  .main-container {
+  .table {
+    color: #cfcfcf;
+    font-size: 1.6em;
     width: 100%;
-    max-width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: hidden;
-    overflow-x: hidden;
   }
 
-  .title-container {
-    width: 100%;
+  .table .bold {
+    font-weight: 600;
+    border: 0px;
+  }
+
+  .table td {
     text-align: center;
-    margin: 1em 0;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
   }
 
-  .ml6 {
-    position: relative;
-    font-weight: 900;
-    font-size: 3.3em;
+  .table a {
+    display: block;
+    padding: 3em 1em;
+    text-decoration: none;
+    color: inherit;
   }
 
-  .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.2em;
-    padding-right: 0.05em;
-    padding-bottom: 0.1em;
-    overflow: hidden;
-  }
-
-  .letter {
-    display: inline-block;
-    line-height: 1em;
-    color: #cfcfcf;
-  }
-
-  .winners {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .winner-entry {
-    transform: translateY(100vh);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: #cfcfcf;
-    font-family: Arial,serif;
-  }
-
-  .winner-pic {
-    margin: 1em 2em;
-  }
-
-  .winner-pic img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 50%;
-  }
-
-  .winner-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-
-  .winner-name {
-    font-weight: 500;
-    font-size: 1.8em;
-  }
-
-  .winner-points {
-    font-size: 1.2em;
-    font-weight: 300;
+  .table .special {
+    color: #faff86;
+    border: 1px solid #faff86;
   }
 
 </style>

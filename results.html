@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+</head>
+
+<body>
+
+<div class="title-container">
+  <h1 class="ml6">
+  <span class="text-wrapper">
+    <span id="letters" class="letters">Top ${top} según ${source}</span>
+  </span>
+  </h1>
+</div>
+
+<div class="main-container">
+  <div class="winners">
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/${picture}"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          ${name}
+        </div>
+        <div class="winner-points">
+          ${points} puntos
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Add your site or application content here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script src="./results-display.js"></script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+<style>
+  body {
+    background-color: #131313;
+  }
+
+  .main-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 80vh;
+    overflow-y: scroll;
+  }
+
+  .title-container {
+    width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+
+  .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+
+  .letter {
+    display: inline-block;
+    line-height: 1em;
+    color: #cfcfcf;
+  }
+
+  .winners {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .winner-entry {
+    transform: translateY(100vh);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #cfcfcf;
+    font-family: Arial,serif;
+  }
+
+  .winner-pic {
+    margin: 1em 2em;
+  }
+
+  .winner-pic img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .winner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .winner-name {
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+
+  .winner-points {
+    font-size: 1.2em;
+    font-weight: 300;
+  }
+
+</style>
+
+</html>
