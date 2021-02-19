@@ -30,7 +30,7 @@
     </thead>
     <tbody>
     <tr>
-      <td class="bold" rowspan="4">Top</td>
+      <td class="bold sideways" rowspan="4">Top</td>
     </tr>
     <tr>
       <td class="bold">Hombres</td>
@@ -123,13 +123,18 @@
     border: 1px solid #faff86;
   }
 
+  .table .sideways {
+    transform: rotate(270deg);
+    padding: 0;
+  }
+
   @media (max-width: 991px) {
     .table {
       font-size: 1em;
     }
 
     .table a {
-      padding: 1.5em 0.5em;
+      padding: 1.5em 0.4em;
     }
   }
 
