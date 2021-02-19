@@ -24,33 +24,131 @@
 
 <body>
 
-<div class="main-container">
-
-  <div class="image-container">
-    <img src="cursed/cursed_1.jpg" class="cursed" />
-    <img src="cursed/cursed_2.png" class="cursed" />
-    <img src="cursed/cursed_3.jpg" class="cursed" />
-    <img src="cursed/cursed_4.jpeg" class="cursed" />
-  </div>
-
+<div class="title-container">
+  <h1 class="ml6">
+  <span class="text-wrapper">
+    <span class="letters">Los que están más buenos según las mujeres</span>
+  </span>
+  </h1>
 </div>
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+<div class="main-container">
+  <div class="winners">
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/richard.jpg"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          Richard Gonzalez
+        </div>
+        <div class="winner-points">
+          69 puntos
+        </div>
+      </div>
+    </div>
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/richard.jpg"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          El que no existe
+        </div>
+        <div class="winner-points">
+          420 puntos
+        </div>
+      </div>
+    </div>
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/richard.jpg"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          Por qué el que tiene más puntos está de segundo?
+        </div>
+        <div class="winner-points">
+          42 puntos
+        </div>
+      </div>
+    </div>
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/richard.jpg"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          No sé cómo gané
+        </div>
+        <div class="winner-points">
+          -420 puntos
+        </div>
+      </div>
+    </div>
+    <div class="winner-entry">
+      <div class="winner-pic">
+        <img
+          src="./img/richard.jpg"/>
+      </div>
+      <div class="winner-info">
+        <div class="winner-name">
+          Hola mamá
+        </div>
+        <div class="winner-points">
+          3.1415926 puntos
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Add your site or application content here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+<script>
+  var textWrapper = document.querySelector('.ml6 .letters');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: false})
+    .add({
+      targets: '.ml6 .letter',
+      translateY: ["1.1em", 0],
+      translateZ: 0,
+      duration: 2000,
+      delay: (el, i) => 60 * i
+    }).add({
+      targets: '.winner-entry',
+      translateY: ["100vh", 0],
+      duration: 2000,
+      easing: "easeOutExpo",
+      delay: (el, i) => 100 * i
+    });
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
 
 <style>
   body {
-    width: 100%;
-    height: 100%;
-    background-color: #333;
+    background-color: #131313;
   }
 
   .main-container {
@@ -64,34 +162,72 @@
     overflow-x: hidden;
   }
 
-  .image-container {
+  .title-container {
     width: 100%;
+    text-align: center;
+    margin: 1em 0;
+  }
+
+  .ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+  }
+
+  .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+
+  .letter {
+    display: inline-block;
+    line-height: 1em;
+    color: #cfcfcf;
+  }
+
+  .winners {
     display: flex;
-    flex-flow: column;
-    justify-content: space-around;
-    align-content: space-around;
-    flex-wrap: wrap;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    flex-direction: column;
   }
 
-  .cursed {
-    border-radius: 50%;
-    height: 23vh;
-    width: 23vh;
+  .winner-entry {
+    transform: translateY(100vh);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #cfcfcf;
+    font-family: Arial,serif;
+  }
+
+  .winner-pic {
+    margin: 1em 2em;
+  }
+
+  .winner-pic img {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    margin: 0.6em 0;
+    border-radius: 50%;
   }
 
-  @media (min-width: 720px) {
-    .image-container {
-      flex-flow: row;
-    }
+  .winner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 
-    .cursed {
-      height: 23vw;
-      width: 23vw;
-    }
+  .winner-name {
+    font-weight: 500;
+    font-size: 1.8em;
+  }
+
+  .winner-points {
+    font-size: 1.2em;
+    font-weight: 300;
   }
 
 </style>
