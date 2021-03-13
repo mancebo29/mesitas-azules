@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Resultados Miss/Mister Mesitas 2021</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,6 +72,7 @@
     justify-content: center;
     max-height: 80vh;
     overflow-y: scroll;
+    padding: 1em 0;
   }
 
   .title-container {
@@ -112,7 +113,6 @@
     flex-direction: row;
     align-items: center;
     color: #cfcfcf;
-    font-family: Arial,serif;
   }
 
   .winner-pic {
@@ -140,6 +140,30 @@
   .winner-points {
     font-size: 1.2em;
     font-weight: 300;
+  }
+
+  @media (max-width: 991px) {
+    .ml6 {
+      font-weight: 600;
+      font-size: 1.4em;
+    }
+
+    .winner-name {
+      font-size: 1.2em;
+    }
+
+    .winner-pic {
+      margin: 0.5em 1.5em;
+    }
+
+    .winner-pic img {
+      width: 80px;
+      height: 80px;
+    }
+
+    .winner-points {
+      font-size: 0.9em;
+    }
   }
 
 </style>
