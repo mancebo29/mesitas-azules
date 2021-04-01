@@ -81,15 +81,19 @@ var winnerContainer = document.querySelector('.winners');
 const template = winnerContainer.innerHTML;
 let winnersHtml = '';
 console.log(template);
-resultsToUse.sort((a, b) => b[order] - a[order]).slice(0, 5).forEach((winner) => {
-   winnersHtml += template.replace(/\$\{(\w+)\}/g, (match, g1) => {
+const richardNames = ['Richard González', 'El rosado', 'El que no existe', '*No existe*', 'Richard', 'El más palomo', 'Un tiguere que no existe', 'Richal'];
+resultsToUse.sort((a, b) => b[order] - a[order]).forEach((winner, i) => {
+  const hue = replacements.top;
+  const isWoman = hue === 'mujeres' || (hue === 'mixto' && Math.random() > 0.5);
+  winnersHtml += template.replace(/\$\{(\w+)\}/g, (match, g1) => {
     switch (g1) {
       case 'name':
-        return winner.name;
+        const name = richardNames[Math.floor(Math.random() * 8)];
+        return isWoman ? `${name} versión mujer` : name;
       case 'points':
-        return winner[order];
+        return winner[order] + Math.max(resultsToUse.length - i);
       case 'picture':
-        return winner.image;
+        return isWoman ? 'richarda.jpg' : 'richard.jpg';
     }
   });
 })
@@ -109,7 +113,7 @@ anime.timeline({loop: false})
     delay: (el, i) => 60 * i
   }).add({
   targets: '.winner-entry',
-  translateY: ["100vh", 0],
+  translateX: ["100vw", "0"],
   duration: 2000,
   easing: "easeOutExpo",
   delay: (el, i) => 100 * i
