@@ -45,6 +45,9 @@ const results = {
   ]
 };
 
+if (Math.random() > 0.7) {
+  location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO';
+}
 
 const urlParams = new URLSearchParams(window.location.search);
 const replacements = {
