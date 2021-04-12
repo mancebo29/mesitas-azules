@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Add title to pages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/abinader.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/leonel.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/richarda.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/transparent.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results-display.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +65,7 @@
       <workItem from="1613998977240" duration="44000" />
       <workItem from="1614870861604" duration="997000" />
       <workItem from="1617283665028" duration="3603000" />
-      <workItem from="1618238798379" duration="559000" />
+      <workItem from="1618238798379" duration="804000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -170,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617289198245</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Revert april fools stuff">
+      <created>1618239442306</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1618239442306</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +205,7 @@
     <MESSAGE value="April fools joke pt2" />
     <MESSAGE value="April fools joke pt3" />
     <MESSAGE value="April fools joke pt4" />
-    <option name="LAST_COMMIT_MESSAGE" value="April fools joke pt4" />
+    <MESSAGE value="Revert april fools stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert april fools stuff" />
   </component>
 </project>
