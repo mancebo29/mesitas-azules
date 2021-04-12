@@ -45,9 +45,6 @@ const results = {
   ]
 };
 
-if (Math.random() > 0.7) {
-  location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO';
-}
 
 const urlParams = new URLSearchParams(window.location.search);
 const replacements = {
@@ -83,23 +80,16 @@ switch (replacements.source) {
 var winnerContainer = document.querySelector('.winners');
 const template = winnerContainer.innerHTML;
 let winnersHtml = '';
-const richardNames = ['Richard González', 'El rosado', 'El que no existe', '*No existe*', 'Richard', 'El más palomo', 'Un tiguere que no existe', 'Richal', 'Un tiguere rosado', 'No es Richard', 'Un tipo vacano', 'El inexistente'];
-resultsToUse.sort((a, b) => b[order] - a[order]).forEach((winner, i) => {
-  const hue = replacements.top;
-  const isWoman = hue === 'mujeres' || (hue === 'mixto' && Math.random() > 0.5);
-  winnersHtml += template.replace(/\$\{(\w+)\}/g, (match, g1) => {
+console.log(template);
+resultsToUse.sort((a, b) => b[order] - a[order]).slice(0, 5).forEach((winner) => {
+   winnersHtml += template.replace(/\$\{(\w+)\}/g, (match, g1) => {
     switch (g1) {
       case 'name':
-        if (i === 0 && hue === 'mixto') return 'Lenoel Fernández';
-        if (i === 1 && hue === 'mixto') return 'Luis Abinader';
-        const name = richardNames[Math.floor(Math.random() * richardNames.length)];
-        return isWoman ? `${name} versión mujer` : name;
+        return winner.name;
       case 'points':
-        return winner[order] + Math.max(resultsToUse.length - i);
+        return winner[order];
       case 'picture':
-        if (i === 0 && hue === 'mixto') return 'leonel.jpeg';
-        if (i === 1 && hue === 'mixto') return 'abinader.jpeg';
-        return isWoman ? 'richarda.jpg' : 'richard.jpg';
+        return winner.image;
     }
   });
 })
