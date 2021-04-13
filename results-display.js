@@ -109,7 +109,7 @@ anime.timeline({loop: false})
     delay: (el, i) => 60 * i
   }).add({
   targets: '.winner-entry',
-  translateY: ["100vh", 0],
+  translateX: ["100vw", "0"],
   duration: 2000,
   easing: "easeOutExpo",
   delay: (el, i) => 100 * i
