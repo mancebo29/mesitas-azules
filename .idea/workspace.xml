@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ivette.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/ivette_guerrero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mancebo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/jairo_mancebo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results-display.js" afterDir="false" />
     </list>
+    <list id="3d8efbac-252b-4535-a0eb-33d8f0e3aab1" name="Revert &quot;April fools joke pt4&quot;" comment="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1llEU0ESSwDTqkIdyUoVpg21Mhb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608163289888</updated>
       <workItem from="1608163291828" duration="2593000" />
+      <workItem from="1618189948287" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -61,14 +66,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="395" y="14" key="CommitChangelistDialog2" timestamp="1608165777606">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="395" y="14" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1608165777606" />
+    <MESSAGE value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
   </component>
 </project>
