@@ -28,11 +28,11 @@
     <div class="winner-entry">
       <div class="winner-pic">
         <img
-          src="./img/${picture}"/>
+          src="./img/${picture}" alt="${name}" title="${name}"/>
       </div>
       <div class="winner-info">
         <div class="winner-name">
-          ${name}
+          <h1 class="winner-name">${name}</h1>
         </div>
         <div class="winner-points">
           ${points} puntos
@@ -71,6 +71,7 @@
     align-items: center;
     justify-content: center;
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .title-container {
@@ -132,7 +133,9 @@
 
   .winner-name {
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.4em;
+    line-height: 1;
+    margin: 0.1em 0;
   }
 
   .winner-points {
@@ -147,7 +150,7 @@
     }
 
     .winner-name {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
 
     .winner-pic {

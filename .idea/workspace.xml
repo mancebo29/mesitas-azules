@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Add title to pages">
+    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ivette.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/ivette_guerrero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mancebo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/jairo_mancebo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results-display.js" afterDir="false" />
     </list>
+    <list id="3d8efbac-252b-4535-a0eb-33d8f0e3aab1" name="Revert &quot;April fools joke pt4&quot;" comment="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,14 +15,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
+    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="ProjectId" id="1llEU0ESSwDTqkIdyUoVpg21Mhb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -29,9 +25,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,13 +35,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cursed" />
     </key>
@@ -61,11 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1608163289888</updated>
       <workItem from="1608163291828" duration="2593000" />
-      <workItem from="1613741010581" duration="4156000" />
-      <workItem from="1613998977240" duration="44000" />
-      <workItem from="1614870861604" duration="997000" />
-      <workItem from="1617283665028" duration="3603000" />
-      <workItem from="1618238798379" duration="804000" />
+      <workItem from="1618189948287" duration="647000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -74,105 +60,7 @@
       <option name="project" value="LOCAL" />
       <updated>1608165777918</updated>
     </task>
-    <task id="LOCAL-00002" summary="MVP completion">
-      <created>1613742124752</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1613742124752</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Make resulsts responsive">
-      <created>1613742477665</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1613742477665</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Attempt to make index responsive">
-      <created>1613742709763</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1613742709763</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Attempt to make index responsive pt 2">
-      <created>1613742918677</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1613742918677</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Attempt to make index responsive pt 3">
-      <created>1613743823286</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1613743823286</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Attempt to make index responsive pt 4">
-      <created>1613744770225</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1613744770225</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Attempt to make index responsive pt 5">
-      <created>1613745450280</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1613745450280</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Attempt to make index responsive pt 6">
-      <created>1613745995655</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1613745995655</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Add title to pages">
-      <created>1613746183075</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1613746183075</updated>
-    </task>
-    <task id="LOCAL-00011" summary="April fools joke">
-      <created>1617286015998</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1617286015998</updated>
-    </task>
-    <task id="LOCAL-00012" summary="April fools joke pt2">
-      <created>1617286832748</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1617286832748</updated>
-    </task>
-    <task id="LOCAL-00013" summary="April fools joke pt3">
-      <created>1617288219369</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1617288219369</updated>
-    </task>
-    <task id="LOCAL-00014" summary="April fools joke pt4">
-      <created>1617289198245</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1617289198245</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Revert april fools stuff">
-      <created>1618239442306</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1618239442306</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,20 +80,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <MESSAGE value="MVP completion" />
-    <MESSAGE value="Make resulsts responsive" />
-    <MESSAGE value="Attempt to make index responsive" />
-    <MESSAGE value="Attempt to make index responsive pt 2" />
-    <MESSAGE value="Attempt to make index responsive pt 3" />
-    <MESSAGE value="Attempt to make index responsive pt 4" />
-    <MESSAGE value="Attempt to make index responsive pt 5" />
-    <MESSAGE value="Attempt to make index responsive pt 6" />
-    <MESSAGE value="Add title to pages" />
-    <MESSAGE value="April fools joke" />
-    <MESSAGE value="April fools joke pt2" />
-    <MESSAGE value="April fools joke pt3" />
-    <MESSAGE value="April fools joke pt4" />
-    <MESSAGE value="Revert april fools stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert april fools stuff" />
+    <MESSAGE value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
   </component>
 </project>
