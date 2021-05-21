@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="">
+    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Update favicon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ivette.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/ivette_guerrero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/mancebo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/jairo_mancebo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results-display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cesar_rondon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/cesar_rondon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/charlotte_galviz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/charlotte_galviz.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/daniella_lapax.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/daniella_lapax.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/diego_torres.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/diego_torres.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gabby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/gabby.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/heladito.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/heladito.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ivette_guerrero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/ivette_guerrero.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/jairo_mancebo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/jairo_mancebo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/joaquin_facundo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/joaquin_facundo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/lia_mora.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/lia_mora.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/luz_gonzalez.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/luz_gonzalez.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/richard_gonzalez.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/richard_gonzalez.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ripken_herrera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/ripken_herrera.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/results-display.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.html" afterDir="false" />
     </list>
-    <list id="3d8efbac-252b-4535-a0eb-33d8f0e3aab1" name="Revert &quot;April fools joke pt4&quot;" comment="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,8 +46,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -38,7 +62,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rules" />
+      <recent name="$PROJECT_DIR$/img/elections" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/results" />
+      <recent name="$PROJECT_DIR$/results" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/rules" />
       <recent name="$PROJECT_DIR$/cursed" />
     </key>
   </component>
@@ -52,6 +85,7 @@
       <updated>1608163289888</updated>
       <workItem from="1608163291828" duration="2593000" />
       <workItem from="1618189948287" duration="647000" />
+      <workItem from="1621604096151" duration="4984000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -60,7 +94,35 @@
       <option name="project" value="LOCAL" />
       <updated>1608165777918</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add group rules">
+      <created>1621619348886</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621619348886</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add missing newline">
+      <created>1621619490464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621619490464</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Make some small text corrections">
+      <created>1621619724257</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1621619724257</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update favicon">
+      <created>1621619922196</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1621619922196</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +143,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;April fools joke pt4&quot;&#10;&#10;This reverts commit bf03f2bf" />
+    <MESSAGE value="Add group rules" />
+    <MESSAGE value="Add missing newline" />
+    <MESSAGE value="Make some small text corrections" />
+    <MESSAGE value="Update favicon" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update favicon" />
   </component>
 </project>
