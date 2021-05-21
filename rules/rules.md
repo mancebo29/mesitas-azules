@@ -6,16 +6,16 @@
 ### ÍNDICE
 1. [Sobre el grupo](#1--sobre-el-grupo)
 1. [Este reglamento](#2--este-reglamento)
-   1. [La adición de reglas o cláusulas](#21--la-adicion-de-reglas-o-clausulas)
+   1. [La adición de reglas o cláusulas](#21--la-adición-de-reglas-o-cláusulas)
 1. [Sobre los admins](#3--sobre-los-admins)
    1. [Funciones](#31--funciones)
    1. [Elecciones de estos](#32--elecciones-de-estos)
    1. [Transiciones en cambios de consejo administrativo](#33--transiciones-en-cambios-de-consejo-administrativo)
-   1. [vacaciones de los admin](#34--vacaciones-de-los-admin)
-   1. [juicios conductuales](#35--juicios-conductuales)
+   1. [Vacaciones de los admin](#34--vacaciones-de-los-admin)
+   1. [Juicios conductuales](#35--juicios-conductuales)
 1. [Sobre el contenido deseado o esperado](#4--sobre-el-contenido-deseado-o-esperado)
     1. [Sobre el contenido nsfw](#41--sobre-el-contenido-nsfw)
-    1. [Qué es nsfw](#42--que-es-nsfw)
+    1. [Qué es nsfw](#42--¿qué-es-nsfw)
 
 
 ### 1- Sobre el grupo
@@ -68,7 +68,7 @@ El contenido NSFW debe tener:
 - Si va a enviar contenido de este tipo poner una etiqueta previa al texto, video e
 imagen que va a compartir.
 
-#### 4.2- ¿Que es NSFW?
+#### 4.2- ¿Qué es NSFW?
 El acrónimo NSFW es un anglicismo que corresponde a “not safe for work.” O Inseguro para el espacio laboral. Cuando se lo usa correctamente, es un aviso para indicar que lo próximo es un enlace a página web, video, fotografía o audio que contiene material inapropiado para el área de trabajo.
 
 Para identificar si lo que va a compartir es nsfw, hágase la siguiente pregunta, ¿perdería mi trabajo si comparto esto en el grupo laboral?
