@@ -1,6 +1,7 @@
 # EL LIBRO DE REGLAS DE LAS MESITAS
 ![Coro mesitas azules](logo.png "Coro mesitas azules")
-#### 1a EDICIÓN MAYO 2021
+#### 1a EDICIÓN
+#### MAYO 2021
 
 ### ÍNDICE
 1. [Sobre el grupo](#1--sobre-el-grupo)
