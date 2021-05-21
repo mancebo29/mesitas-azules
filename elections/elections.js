@@ -1,16 +1,24 @@
 const results = [
-  { "name": "César Rondón", "women": 21, "total": 60, "men": 39, "image": "cesar_rondon.jpg" },
-  { "name": "*No Existe*", "women": 30, "total": 34, "men": 4, "image": "richard_gonzalez.jpg" },
-  { "name": "Gabriel Abreu (AKA: Heladito)", "women": 37, "total": 73, "men": 36, "image": "heladito.jpg" },
-  { "name": "Jairo Mancebo", "women": 65, "total": 212, "men": 147, "image": "jairo_mancebo.jpg" },
-  { "name": "Joaquín Facundo", "women": 48, "total": 124, "men": 76, "image": "joaquin_facundo.jpg" },
+  { name: "Jairo Mancebo", total: 0, image: "Jairo Mancebo.jpeg" },
+  { name: "Gabriel *Heladito* Abreu", total: 0, image: "Gabriel Abreu.png" },
+  { name: "Daniel Rodriguez", total: 0, image: "Daniel Lopez.jpg" },
+  { name: "Dennyse Dominguez", total: 0, image: "dennyse dominguez.jpg" },
+  { name: "Joaquín Facundo", total: 0, image: "sus.jpg" },
+  { name: "Ken Sosa", total: 0, image: "Ken Ramos.jpeg" },
+  { name: "Neifis Vásquez", total: 0, image: "Neifis Vásquez Ferreras.jpg" },
+  { name: "NO fucking Pussyflake, weak ass Merino", total: 0, image: "Lenin Salazar Sanchez.jpg" },
+  { name: "Luis Merino", total: 0, image: "Luis Merino.png" },
+  { name: "Carlos Cabreja ", total: 0, image: "Carlos Cabreja.jpg" },
+  { name: "Richard González", total: 0, image: "richard gonzalez.jpg" },
+  { name: "José Martínez", total: 0, image: "Jose Ricardo Martinez.png" },
+  { name: "Wilmor Medina", total: 0, image: "Wilmor Antonio.jpg" },
 ];
 
 var winnerContainer = document.querySelector('.winners');
 const template = winnerContainer.innerHTML;
 let winnersHtml = '';
 
-results.sort((a, b) => b.total - a.total).slice(0, 5).forEach((winner) => {
+results.sort((a, b) => b.total - a.total).forEach((winner) => {
   winnersHtml += template.replace(/\$\{(\w+)\}/g, (match, g1) => {
     switch (g1) {
       case 'name':
