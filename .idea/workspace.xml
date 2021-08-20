@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Update favicon">
+    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Update rules">
+      <change afterPath="$PROJECT_DIR$/comon/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comon/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comon/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/comon/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/levels/MEE6 - El Bot de Discord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monikers/cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monikers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cesar_rondon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/cesar_rondon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/charlotte_galviz.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/charlotte_galviz.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/daniella_lapax.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/daniella_lapax.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/diego_torres.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/diego_torres.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/gabby.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/gabby.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/heladito.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/heladito.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ivette_guerrero.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/ivette_guerrero.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/jairo_mancebo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/jairo_mancebo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/joaquin_facundo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/joaquin_facundo.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/lia_mora.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/lia_mora.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/luz_gonzalez.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/luz_gonzalez.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/richard_gonzalez.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/richard_gonzalez.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/ripken_herrera.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/results/ripken_herrera.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results-display.js" beforeDir="false" afterPath="$PROJECT_DIR$/results/results-display.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results.html" beforeDir="false" afterPath="$PROJECT_DIR$/results/results.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -68,11 +57,11 @@
       <recent name="$PROJECT_DIR$/img/elections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/comon/js" />
+      <recent name="$PROJECT_DIR$/comon/css" />
+      <recent name="$PROJECT_DIR$/levels" />
       <recent name="$PROJECT_DIR$/img/results" />
       <recent name="$PROJECT_DIR$/results" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/rules" />
-      <recent name="$PROJECT_DIR$/cursed" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -85,7 +74,12 @@
       <updated>1608163289888</updated>
       <workItem from="1608163291828" duration="2593000" />
       <workItem from="1618189948287" duration="647000" />
-      <workItem from="1621604096151" duration="4984000" />
+      <workItem from="1621604096151" duration="6451000" />
+      <workItem from="1621856610892" duration="399000" />
+      <workItem from="1623681480355" duration="431000" />
+      <workItem from="1623869253062" duration="276000" />
+      <workItem from="1624308603277" duration="1687000" />
+      <workItem from="1629488812396" duration="4960000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -122,7 +116,49 @@
       <option name="project" value="LOCAL" />
       <updated>1621619922196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactor folder structure">
+      <created>1621620297249</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1621620297249</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Prepare for election results">
+      <created>1621622148597</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1621622148597</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add ethereum price">
+      <created>1623869303757</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623869303757</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add ethereum info">
+      <created>1623869368410</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1623869368410</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Refactor ethereum thingy">
+      <created>1623869395129</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623869395129</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update rules">
+      <created>1624308907669</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1624308907669</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +183,12 @@
     <MESSAGE value="Add missing newline" />
     <MESSAGE value="Make some small text corrections" />
     <MESSAGE value="Update favicon" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update favicon" />
+    <MESSAGE value="Refactor folder structure" />
+    <MESSAGE value="Prepare for election results" />
+    <MESSAGE value="Add ethereum price" />
+    <MESSAGE value="Add ethereum info" />
+    <MESSAGE value="Refactor ethereum thingy" />
+    <MESSAGE value="Update rules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update rules" />
   </component>
 </project>
