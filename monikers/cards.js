@@ -94,6 +94,7 @@ let cardsInUse = cards;
 let timeout, interval;
 let currentIndex = 0;
 let currentTeam = null;
+let inGame = false;
 
 const scores = { a: 0, b: 0 };
 
@@ -170,6 +171,7 @@ function displayCard() {
 }
 
 function hideCard() {
+  inGame = false;
   const title = document.getElementById('title');
   const description = document.getElementById('description');
   const score = document.getElementById('score');
@@ -209,7 +211,8 @@ function handleSkip() {
 function handleStart() {
   currentTeam = currentTeam === 'a' ? 'b' : 'a';
   const turn = document.getElementById('turn');
-  turn.innerText = `Turno de ${currentTeam.toUpperCase()}`
+  turn.innerText = `Turno de ${currentTeam.toUpperCase()}`;
+  inGame = true;
   getCards();
   updateCards();
   updateScores();
@@ -244,6 +247,10 @@ function handleTouchStart(evt) {
 
 function handleTouchMove(evt) {
   if ( ! xDown || ! yDown ) {
+    return;
+  }
+
+  if (!inGame) {
     return;
   }
 
