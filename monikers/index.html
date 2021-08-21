@@ -14,6 +14,12 @@
         <h2 id="scores">A: 0    B: 0</h2>
       </div>
       <div>
+        <h2 id="turn"></h2>
+      </div>
+      <div>
+        <h2 id="cards-left"></h2>
+      </div>
+      <div>
         <h2 id="timer"></h2>
       </div>
     </div>
@@ -45,20 +51,24 @@
     height: 80vh;
     display: flex;
     flex-direction: column;
-    align-content: space-around;
+    align-content: space-between;
     padding: 10%;
+    background-color: #f9f9f9;
   }
 
   #title {
-    font-size: 3.5em;
+    font-size: 3em;
+    text-align: center;
   }
 
   #description {
     font-size: 1.5em;
+    text-align: center;
   }
 
   #score {
-    font-size: 2em;
+    font-size: 1.5em;
+    text-align: center;
   }
 </style>
 </html>

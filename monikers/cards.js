@@ -93,7 +93,7 @@ const cards = [
 let cardsInUse = cards;
 let timeout, interval;
 let currentIndex = 0;
-let currentTeam = 'a';
+let currentTeam = null;
 
 const scores = { a: 0, b: 0 };
 
@@ -122,13 +122,14 @@ function save() {
 function start() {
   const previousSession = localStorage.getItem('cards');
   const session = JSON.parse(previousSession);
-  if (previousSession && session && session.cardsInUse.length) {
-    const yes = confirm("Parece que había otro juego en progreso. Seguir con ese?")
-    if (yes) {
+  if (previousSession && session && session.cardsInUse.length
+    && (session.scores.a || session.scores.b)) {
+    if (confirm("Parece que había otro juego en progreso. Seguir con ese?")) {
       console.log(session);
       cardsInUse = session.cardsInUse;
       scores.a = session.scores.a;
       scores.b = session.scores.b;
+      updateScores();
     }
   }
 }
@@ -136,6 +137,11 @@ function start() {
 function updateScores() {
   const elem = document.getElementById('scores');
   elem.innerText = `A: ${scores.a}\t\tB: ${scores.b}`;
+}
+
+function updateCards() {
+  const elem = document.getElementById('cards-left');
+  elem.innerText = `${currentIndex + 1}/${cardsInUse.length}`;
 }
 
 function nextRound() {
@@ -156,7 +162,7 @@ function displayCard() {
   const score = document.getElementById('score');
 
   const card = cardsInUse[currentIndex];
-  console.log(card);
+  updateCards();
   title.innerText = card.title;
   description.innerText = card.description;
   score.innerText = card.score;
@@ -201,7 +207,11 @@ function handleSkip() {
 }
 
 function handleStart() {
+  currentTeam = currentTeam === 'a' ? 'b' : 'a';
+  const turn = document.getElementById('turn');
+  turn.innerText = `Turno de ${currentTeam.toUpperCase()}`
   getCards();
+  updateCards();
   updateScores();
   const timer = document.getElementById('timer');
   let time = 10;

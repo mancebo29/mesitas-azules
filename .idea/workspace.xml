@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Update rules">
-      <change afterPath="$PROJECT_DIR$/comon/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comon/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comon/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comon/js/bootstrap.min.js.map" afterDir="false" />
+    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Monkers v0.1">
       <change afterPath="$PROJECT_DIR$/levels/MEE6 - El Bot de Discord.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monikers/cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monikers/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monikers/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/monikers/cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monikers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/monikers/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       <workItem from="1623681480355" duration="431000" />
       <workItem from="1623869253062" duration="276000" />
       <workItem from="1624308603277" duration="1687000" />
-      <workItem from="1629488812396" duration="4960000" />
+      <workItem from="1629488812396" duration="5916000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -158,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624308907669</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Monkers v0.1">
+      <created>1629496835208</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629496835208</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +192,7 @@
     <MESSAGE value="Add ethereum info" />
     <MESSAGE value="Refactor ethereum thingy" />
     <MESSAGE value="Update rules" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update rules" />
+    <MESSAGE value="Monkers v0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monkers v0.1" />
   </component>
 </project>
