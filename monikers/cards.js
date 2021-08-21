@@ -255,9 +255,9 @@ function handleTouchMove(evt) {
 
   if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
     if ( xDiff > 0 ) {
-      handleGuess();
-    } else {
       handleSkip();
+    } else {
+      handleGuess();
     }
   } else {
     if ( yDiff > 0 ) {
