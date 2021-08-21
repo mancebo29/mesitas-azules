@@ -214,7 +214,7 @@ function handleStart() {
   updateCards();
   updateScores();
   const timer = document.getElementById('timer');
-  let time = 10;
+  let time = 59;
   interval = setInterval(() => {
     timer.innerText = `${time--}`;
   }, 1000);
