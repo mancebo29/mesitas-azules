@@ -173,7 +173,7 @@ function displayCard() {
 function hideCard() {
   inGame = false;
   const startBtn = document.getElementById('start');
-  startBtn.disabled = true;
+  startBtn.disabled = false;
   const title = document.getElementById('title');
   const description = document.getElementById('description');
   const score = document.getElementById('score');
