@@ -1,13 +1,17 @@
 const results = [
-  { name: "Fco. Gabriel Abreu C.", total: 88, image: "Heladito.jpeg" },
-  { name: "Berlín Pérez", total: 61, image: "Gabby.jpg" },
-  { name: "Jairo Mancebo", total: 147, image: "Mancebo.jpg" },
-  { name: "Ripken Herrera", total: 58, image: "Ripken.png" },
-  { name: "Deny D", total: 101, image: "Deny.jpg" },
-  { name: "Ivette Guerrero Castillo", total: 72, image: "Ivette.jpeg" },
-  { name: "Edward Pappaterra", total: 55, image: "Papaterra.jpg" },
-  { name: "Annette Chabebe", total: 82, image: "Annette.jpg" },
-  { name: "Neifis Vásquez", total: 92, image: "Neifis.jpg" },
+  { name: "Jairo Mancebo", total: 140, image: "Jairo Mancebo.jpeg" },
+  { name: "Gabriel *Heladito* Abreu", total: 69, image: "Gabriel Abreu.png" },
+  { name: "Daniel Rodriguez", total: 0, image: "Daniel Lopez.jpg" },
+  { name: "Dennyse Dominguez", total: 80, image: "dennyse dominguez.jpg" },
+  { name: "Joaquín Facundo", total: 47, image: "sus.jpg" },
+  { name: "Ken Sosa", total: 158, image: "Ken Ramos.jpeg" },
+  { name: "Neifis Vásquez", total: 18, image: "Neifis Vásquez Ferreras.jpg" },
+  { name: "NO fucking Pussyflake, weak ass Merino", total: 2, image: "Lenin Salazar Sanchez.jpg" },
+  { name: "Luis Merino", total: 91, image: "Luis Merino.png" },
+  { name: "Carlos Cabreja ", total: 8, image: "Carlos Cabreja.jpg" },
+  { name: "Richard González", total: 23, image: "richard gonzalez.jpg" },
+  { name: "José Martínez", total: 23, image: "Jose Ricardo Martinez.png" },
+  { name: "Wilmor Medina", total: 69, image: "Wilmor Antonio.jpg" },
 ];
 
 var winnerContainer = document.querySelector('.winners');
