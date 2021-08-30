@@ -79,10 +79,9 @@ Para fines de entendimiento preciso, categorizaremos el contenido NSFW dependien
 
 - **Categoría NS0** - informes noticiosos de incendios o explosiones que aparentarían accidentes o ataques terroristas, solo fuego, caos y edificios destruidos, no aparecen ciudadanos heridos. Las alertas que se darán son resúmenes de lo que ocurre o grafique el video (incendio en la avenida X.)
 - **Categoría NS1** - Violencia dramatizada, batallas sangrientas u obras de arte cuya descripción sangrienta es mínima en el mejor de los casos. El video que ocasionó esta debacle entra en esta categoría. (X país, tiroteo en la iglesia, personas haciendo estupideces.)
-- **CategoríaNS2**-Lasc onsecuencias físicas visibles del NS0,hay heridos cuyas vidas han cambiado para siempre. Visibles quemadas donde se perdió la piel, etc. (daños físicos.)
-- **Categoría NS3** - similar al siguiente, pero nada es claramente visible, intentaron censurar mediante pantalla borrosa. (gravemente herido / soft gore)\
-- **Categoría NS4** - Vísceras claramente visibles o cuerpos destruidos y múltiples
-fallecidos Por ejemplo, la escena clásica de motorista vs patana. (hecho pedazos/gore).
+- **CategoríaNS2**-Las consecuencias físicas visibles del NS0, hay heridos cuyas vidas han cambiado para siempre. Visibles quemaduras donde se perdió la piel, etc. (daños físicos.)
+- **Categoría NS3** - Similar al siguiente, pero nada es claramente visible, intentaron censurar mediante pantalla borrosa. (gravemente herido / soft gore)
+- **Categoría NS4** - Vísceras claramente visibles o cuerpos destruidos y múltiples fallecidos Por ejemplo, la escena clásica de motorista vs patana. (hecho pedazos/gore).
 
 **Notas**:
 1. Es bienvenido el resto del contenido que no caiga en ninguna de las categorías

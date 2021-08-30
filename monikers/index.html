@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../comon/css/bootstrap.min.css">
+  <title>Monikers submissions</title>
+  <script src="./cards.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="w-100">
+    <div class="d-flex justify-content-between">
+      <div>
+        <h2 id="scores">A: 0    B: 0</h2>
+      </div>
+      <div>
+        <h2 id="turn"></h2>
+      </div>
+      <div>
+        <h2 id="cards-left"></h2>
+      </div>
+      <div>
+        <h2 id="timer"></h2>
+      </div>
+    </div>
+    <div id="card" class="mt-2">
+      <div>
+        <h1 id="title"></h1>
+      </div>
+      <div>
+        <p id="description"></p>
+      </div>
+      <div>
+        <h3 id="score"></h3>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+      <button class="btn btn-primary btn-lg" id="start">Comenzar</button>
+    </div>
+  </div>
+</div>
+</body>
+<style>
+  html {
+    font-family: Helvetica, serif;
+    font-size: 1.5em;
+  }
+
+  #card {
+    border: black 1px solid;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 10%;
+    background-color: #f9f9f9;
+  }
+
+  #title {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  #description {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  #score {
+    font-size: 1.5em;
+    text-align: center;
+  }
+</style>
+</html>
