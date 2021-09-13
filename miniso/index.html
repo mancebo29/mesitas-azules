@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+</head>
+
 <body>
 <input id="fileInput" type="file">
 
@@ -210,6 +214,10 @@
                 </div>
                 <div class="data">
                     <div class="entry">
+                        <label>Código</label>
+                        <span>@{barcode}</span>
+                    </div>
+                    <div class="entry">
                         <label>Total en caja original</label>
                         <span>@{boxSize}</span>
                     </div>
@@ -275,8 +283,8 @@
             return item[11];
           case 'index':
             return i;
-          case 'title':
-            return item[2];
+          case 'barcode':
+            return item[0];
           case 'boxSize':
             return item[18];
           case 'category':
