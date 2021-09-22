@@ -2,7 +2,7 @@ const cards = [
   { title: "Mancebo metiéndole la lengua por la nariz a Annette", description: "Literalmente eso, Mancebo le meitó la lengua por la nariz a Annette en un coro en casa de Isa.", score: 2 },
   { title: "Amogus", description: "El meme que salió a partir del juego de deducción social Among Us. Es básicamente un humanoide sin brazos, pero con un traje liso que tiene un visor.", score: 2 },
   { title: "Davmi's pass", description: "Un ticket que te permite hacer uso (a discreción del portador) del güevo de Davmi.", score: 1 },
-  { title: "La silla con el güevo", description: "Hay dos sillas, una tiene u güevo.", score: 1 },
+  { title: "La silla con el güevo", description: "https://i.ytimg.com/vi/ygO5TlE-830/maxresdefault.jpg", score: 1 },
   { title: "La silla con el bizcocho", description: "Hay dos sillas, una tiene un bizcocho.", score: 1 },
   { title: "Vaina", description: "Envoltura donde se encuentran semillas en una hilera.", score: 1 },
   { title: "El carajo", description: "Mandamos a las personas ahí cuando cometían una falta o nos sacan de quicio. ", score: 2 },
@@ -165,9 +165,12 @@ function displayCard() {
   const card = cardsInUse[currentIndex];
   updateCards();
   title.innerText = card.title;
-  description.innerText = card.description;
+  if (isValidHttpUrl(card.description)) {
+    description.innerHTML = `<img src="${card.description}" />`;
+  } else {
+    description.innerText = card.description;
+  }
   score.innerText = card.score;
-  // img.setAttribute('src', cardsInUse[currentIndex].url);
 }
 
 function hideCard() {
@@ -279,6 +282,18 @@ function handleTouchMove(evt) {
   xDown = null;
   yDown = null;
 };
+
+function isValidHttpUrl(string) {
+  let url;
+
+  try {
+    url = new URL(string);
+  } catch (_) {
+    return false;
+  }
+
+  return url.protocol === "http:" || url.protocol === "https:";
+}
 
 document.onreadystatechange = () => {
   start();

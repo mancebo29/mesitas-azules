@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Monkers v0.1">
-      <change afterPath="$PROJECT_DIR$/levels/MEE6 - El Bot de Discord.html" afterDir="false" />
+    <list default="true" id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="Miniso utility v0.2: Add barcode">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monikers/cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/monikers/cards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monikers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/monikers/index.html" afterDir="false" />
+    </list>
+    <list id="b5cf4e09-9bf8-40a5-b325-9be9f25d1717" name="miniso" comment="">
+      <change afterPath="$PROJECT_DIR$/miniso/dropzone/basic.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniso/dropzone/dropzone.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/miniso/dropzone/dropzone.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miniso/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/miniso/index.html" afterDir="false" />
+    </list>
+    <list id="9cfc643d-ade9-497b-8604-91d66e314e3e" name="rules" comment="">
+      <change beforePath="$PROJECT_DIR$/rules/rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/rules/rules.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +42,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/miniso/dropzone" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -48,22 +56,25 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/miniso/dropzone" />
       <recent name="$PROJECT_DIR$/rules" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/img/elections" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/miniso" />
       <recent name="$PROJECT_DIR$/comon/js" />
       <recent name="$PROJECT_DIR$/comon/css" />
       <recent name="$PROJECT_DIR$/levels" />
       <recent name="$PROJECT_DIR$/img/results" />
-      <recent name="$PROJECT_DIR$/results" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="87af3bd5-4490-41cb-b6dc-1b854e4162f6" name="Default Changelist" comment="" />
+      <changelist id="b5cf4e09-9bf8-40a5-b325-9be9f25d1717" name="miniso" comment="" />
+      <changelist id="9cfc643d-ade9-497b-8604-91d66e314e3e" name="rules" comment="" />
       <created>1608163289888</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -75,7 +86,12 @@
       <workItem from="1623681480355" duration="431000" />
       <workItem from="1623869253062" duration="276000" />
       <workItem from="1624308603277" duration="1687000" />
-      <workItem from="1629488812396" duration="5916000" />
+      <workItem from="1629488812396" duration="6903000" />
+      <workItem from="1630331380468" duration="1129000" />
+      <workItem from="1631541769028" duration="2573000" />
+      <workItem from="1631546312762" duration="186000" />
+      <workItem from="1631643330618" duration="1181000" />
+      <workItem from="1632256019314" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1608165777918</created>
@@ -161,7 +177,63 @@
       <option name="project" value="LOCAL" />
       <updated>1629496835208</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Monikers v0.2">
+      <created>1629504115266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629504115266</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Update timer">
+      <created>1629504509522</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629504509522</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Invert swipe direction">
+      <created>1629504594798</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629504594798</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Monikers v0.3">
+      <created>1629504881649</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1629504881649</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Monikers v0.4">
+      <created>1629505085186</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1629505085186</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Monikers v0.5">
+      <created>1629505289638</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1629505289639</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Implement miniso utility v0.1">
+      <created>1631545237993</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631545237994</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Miniso utility v0.2: Add barcode">
+      <created>1631546494034</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631546494034</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,6 +265,14 @@
     <MESSAGE value="Refactor ethereum thingy" />
     <MESSAGE value="Update rules" />
     <MESSAGE value="Monkers v0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Monkers v0.1" />
+    <MESSAGE value="Monikers v0.2" />
+    <MESSAGE value="Update timer" />
+    <MESSAGE value="Invert swipe direction" />
+    <MESSAGE value="Monikers v0.3" />
+    <MESSAGE value="Monikers v0.4" />
+    <MESSAGE value="Monikers v0.5" />
+    <MESSAGE value="Implement miniso utility v0.1" />
+    <MESSAGE value="Miniso utility v0.2: Add barcode" />
+    <option name="LAST_COMMIT_MESSAGE" value="Miniso utility v0.2: Add barcode" />
   </component>
 </project>
