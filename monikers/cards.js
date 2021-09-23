@@ -14,7 +14,7 @@ function getDeck() {
     const url = new URL(window.location);
     const deckName = url.searchParams.get('deck');
     const cards = url.searchParams.get('cards');
-    deck = shuffle(window.decks[deckName]).slice(0, cards);
+    deck = shuffle(window.decks[deckName]).slice(0, cards || 50);
   }
   return [...deck];
 }
