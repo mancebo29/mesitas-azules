@@ -27,6 +27,7 @@ button.rounded-circle {
 
 #start {
   height: 4em;
+  min-width: 4em;
   font-size: 1.5em;
   margin: 1em 0;
   color: white;
@@ -93,4 +94,16 @@ button.rounded-circle {
   flex-wrap: wrap;
   width: 100%;
   display: flex;
+}
+
+#endTurn, #goBack {
+  top: 1%;
+  right: 1%;
+  width: 2em;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+#goBack {
+  left: 1%;
 }

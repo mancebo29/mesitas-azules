@@ -90,7 +90,8 @@ function displayCard() {
 function hideCard() {
   inGame = false;
   const startBtn = document.getElementById('start');
-  startBtn.disabled = false;
+  startBtn.innerText = 'Comenzar'
+  startBtn.classList.remove('rounded-circle');
   const title = document.getElementById('title');
   const description = document.getElementById('description');
   const score = document.getElementById('score');
@@ -229,11 +230,37 @@ function isValidHttpUrl(string) {
   return url.protocol === "http:" || url.protocol === "https:";
 }
 
-document.onreadystatechange = () => {
+function withConfirmation(cb) {
+  return () => {
+    if (window.confirm('Estás seguro?')) {
+      cb();
+    }
+  }
+}
+
+function endTurn() {
+  clearTimeout(timeout);
+  clearInterval(interval);
+  hideCard();
+}
+
+function docReady(fn) {
+  // see if DOM is already available
+  if (document.readyState === "complete" || document.readyState === "interactive") {
+    // call on next available tick
+    setTimeout(fn, 1);
+  } else {
+    document.addEventListener("DOMContentLoaded", fn);
+  }
+}
+
+docReady(() => {
   start();
   const startBtn = document.getElementById('start');
   const skipBtn = document.getElementById('skip');
   const acceptBtn = document.getElementById('accept');
+  const endTurnBtn = document.getElementById('endTurn');
+  const goBackBtn = document.getElementById('goBack');
 
   startBtn.onclick = () => {
     if (inGame) {
@@ -241,9 +268,12 @@ document.onreadystatechange = () => {
     } else {
       handleStart();
       startBtn.innerHTML = '&#11176;';
+      startBtn.classList.add('rounded-circle');
     }
   }
 
   skipBtn.onclick = handleSkip;
   acceptBtn.onclick = handleGuess;
-}
+  endTurnBtn.onclick = withConfirmation(endTurn);
+  goBackBtn.onclick = withConfirmation(window.history.back);
+});
