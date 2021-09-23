@@ -1,3 +1,4 @@
+let deck = null;
 let cardsInUse = getDeck();
 let timeout, interval;
 let currentIndex = 0;
@@ -9,9 +10,13 @@ let lastGuessed = false;
 const scores = { a: 0, b: 0 };
 
 function getDeck() {
-  const url = new URL(window.location);
-  const deck = url.searchParams.get("deck");
-  return window.decks[deck];
+  if (!deck) {
+    const url = new URL(window.location);
+    const deckName = url.searchParams.get('deck');
+    const cards = url.searchParams.get('cards');
+    deck = shuffle(window.decks[deckName]).slice(0, cards);
+  }
+  return [...deck];
 }
 
 function shuffle(array) {
