@@ -272,7 +272,7 @@ docReady(() => {
       handleUndo();
     } else {
       handleStart();
-      startBtn.innerHTML = '&#11176;';
+      startBtn.innerHTML = '<i class="fas fa-undo"></i>';
       startBtn.classList.add('rounded-circle');
     }
   }
