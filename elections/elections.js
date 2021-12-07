@@ -1,13 +1,5 @@
 const results = [
-  { name: "Fco. Gabriel Abreu C.", total: 88, image: "Heladito.jpeg" },
-  { name: "Berlín Pérez", total: 61, image: "Gabby.jpg" },
-  { name: "Jairo Mancebo", total: 147, image: "Mancebo.jpg" },
-  { name: "Ripken Herrera", total: 58, image: "Ripken.png" },
-  { name: "Deny D", total: 101, image: "Deny.jpg" },
-  { name: "Ivette Guerrero Castillo", total: 72, image: "Ivette.jpeg" },
-  { name: "Edward Pappaterra", total: 55, image: "Papaterra.jpg" },
-  { name: "Annette Chabebe", total: 82, image: "Annette.jpg" },
-  { name: "Neifis Vásquez", total: 92, image: "Neifis.jpg" },
+
 ];
 
 var winnerContainer = document.querySelector('.winners');
