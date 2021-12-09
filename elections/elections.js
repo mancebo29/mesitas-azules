@@ -1,5 +1,14 @@
 const results = [
-
+  { name: "Danna Ledesma", total: 89, image: "Danna.jpg" },
+  { name: "Joaquin f", total: 83, image: "Joaquin.jpg" },
+  { name: "Jades Duran (Hades) (Teriyaki) (restaurant chino)", total: 28, image: "Jades.jpg" },
+  { name: "Ripken Herrera", total: 81, image: "Ripken.png" },
+  { name: "Ken Sosa", total: 152, image: "Ken.jpg" },
+  { name: "Manuel Pellerano", total: 17, image: "Manuel.jpg" },
+  { name: "Emmanuel Polanco y Mariela Nouel", total: 88, image: "Emmanuel.jpg" },
+  { name: "Daniel (Pero Dios mío) Feliz", total: 71, image: "Daniel.png" },
+  { name: "Luis Merino", total: 122, image: "Merino.jpg" },
+  { name: "Wilmor Medina", total: 215, image: "Wilmor.jpeg" }
 ];
 
 var winnerContainer = document.querySelector('.winners');
