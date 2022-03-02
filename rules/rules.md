@@ -1,7 +1,7 @@
 # EL LIBRO DE REGLAS DE LAS MESITAS
 ![Coro mesitas azules](logo.svg "Coro mesitas azules")
-#### 1a EDICIÓN
-#### MAYO 2021
+#### 2a EDICIÓN
+#### MARZO 2022
 
 ### ÍNDICE
 1. [Sobre el grupo](#1--sobre-el-grupo)
@@ -15,7 +15,7 @@
    1. [Juicios conductuales](#35--juicios-conductuales)
 1. [Sobre el contenido deseado o esperado](#4--sobre-el-contenido-deseado-o-esperado)
     1. [Sobre el contenido nsfw](#41--sobre-el-contenido-nsfw)
-    1. [Qué es nsfw](#42--¿qué-es-nsfw)
+    1. [Qué es nsfw](#42--qué-es-nsfw)
 
 
 ### 1- Sobre el grupo
