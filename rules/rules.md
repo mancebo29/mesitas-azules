@@ -60,6 +60,10 @@ Párrafo: Se permitirá por integrante del consejo administrativo cuantos manda
 
 Si, por inusuales circunstancias, un admin adquiere un mandato interino indefinido debido a la salida de un integrante del consejo directivo, su cargo será el de admin interino hasta resultar favorecido en las próximas elecciones, donde, como establece el primer párrafo de este acápite, tendrá un mandato de 100 días, cuántos días acumule como admin interino se ignorarán en el conteo de su período de mandato oficial para evitar confusiones frente a sus colegas del consejo directivo.
 
+Párrafo: Los Integrantes nuevos al grupo deberán formar parte del mismo por al menos 2 meses antes de poder postularse en los comicios para verse favorecidos con el sufragio del grupo. 
+
+  Aclarando: Esto es para garantizar que dicho reciente integrante conozca la menéutica del grupo y evitar que se comporte como un admin desaterrizado. En dicho momento adquirirá su derecho al sufragio.
+
 Párrafo: Impeachment - Si algún admin cae en un accionar conocido como "abuso de poder", el consejo administrativo puede establecer un juicio express (sin la necesidad de organizar un día durante una llamada al Discord, sabemos que no se hará). El "juicio express" consiste en someter a voto grupal general durante un período de 24h la posibilidad de desvincular de las funciones al admin en cuestión. 
 
   Aclarando: Si el admin presenta unos argumentos razonables y funcionales en cualquier momento previo al veredicto, podrá ser exonerado de los cargos.
