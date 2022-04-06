@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Libro de reglas de las mesitas</title>
+</head>
+<body>
+<div id="content"></div>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+  fetch('./rules.md')
+      .then(response => response.text())
+      .then(text => document.getElementById('content').innerHTML = marked.parse(text));
+</script>
+<link rel="stylesheet" href="./splendor.css">
+</body>
+</html>
