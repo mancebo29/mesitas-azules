@@ -27,6 +27,8 @@ $(document).ready(function() {
   });
 
   select.innerHTML = '';
+  const defaultOption = document.createElement('option');
+  select.append(defaultOption);
   window.resort.forEach(p => {
     const option = document.createElement('option');
     option.value = p.name;
