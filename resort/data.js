@@ -100,7 +100,7 @@ window.resort = [
     "paymentType": ""
   },
   {
-    "name": "Wilmor Mediina",
+    "name": "Wilmor Medina",
     "roomType": 3,
     "paymentType": 1
   },

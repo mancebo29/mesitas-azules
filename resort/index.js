@@ -1,7 +1,7 @@
 const paymentInfo = {
-  '1': 18348.00,
-  '2': 15012.00,
-  '3': 11787.20
+  '1': 14567.20,
+  '2': 11231.20,
+  '3': 10341.60
 };
 
 const quotesMap = {
@@ -34,7 +34,9 @@ $(document).ready(function() {
     select.append(option);
   });
 
-  select.select2();
+  select.select2({
+    placeholder: 'Pon tu nombre'
+  });
 
   const getMonthName = (num) => {
     const date = new Date(2022, 1, 1);
