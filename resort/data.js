@@ -97,7 +97,7 @@ window.resort = [
   {
     "name": "Henry Vásquez",
     "roomType": 2,
-    "paymentType": ""
+    "paymentType": 6
   },
   {
     "name": "Wilmor Medina",
@@ -117,7 +117,7 @@ window.resort = [
   {
     "name": "Richard González",
     "roomType": 3,
-    "paymentType": ""
+    "paymentType": 4
   },
   {
     "name": "Camilo Osoria",
@@ -167,11 +167,11 @@ window.resort = [
   {
     "name": "Lisbeth Toribio",
     "roomType": 3,
-    "paymentType": ""
+    "paymentType": 6
   },
   {
     "name": "Melissa Mateo",
     "roomType": 3,
-    "paymentType": ""
+    "paymentType": 6
   }
 ];
