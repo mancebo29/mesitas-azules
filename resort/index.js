@@ -35,7 +35,9 @@ $(document).ready(function() {
   });
 
   select.select2({
-    placeholder: 'Pon tu nombre'
+    placeholder: 'Pon tu nombre',
+    width: '100%',
+    selectionCssClass: 'selector',
   });
 
   const getMonthName = (num) => {
@@ -69,7 +71,9 @@ $(document).ready(function() {
         <div class="accountInfo">
           <p>BHD LEON</p>
           <p>Nombre: Romer Diaz</p>
-          <p>Cta de ahorro: 30195400016 <button class="btn">Copiar</button></p>
+          <div class="inline">
+            <span>Cta de ahorro: 30195400016</span><button class="btn">Copiar</button>
+          </div>
           <p>ID: 402-2401-371-0</p>
         </div>
 `;

@@ -68,7 +68,27 @@
   .btn {
     border-radius: 5px;
     background-color: #97cce5;
-    height: 32px;
+    padding: 0.2em;
+    margin: 0 1em;
+  }
+
+  .inline {
+    display: flex;
+    align-items: center;
+  }
+
+  @media (max-width: 991px) {
+    .selector {
+      font-size:1.5em;
+    }
+
+    .inline span {
+      font-size: 2em;
+    }
+
+    .btn {
+      font-size: 1.5em;
+    }
   }
 
 </style>
