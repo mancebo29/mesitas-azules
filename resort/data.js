@@ -56,7 +56,7 @@ window.resort = [
   },
   {
     "name": "José Ricardo Martinez",
-    "roomType": 2,
+    "roomType": 3,
     "paymentType": 3
   },
   {
