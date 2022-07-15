@@ -59,6 +59,10 @@ $(document).ready(function() {
             <span>@{roomType}</span>
           </div>
           <div class="entry">
+            <label></label>
+            <span>@{roomates}</span>
+          </div>
+          <div class="entry">
             <label>Plan de pago elegido</label>
             <span>@{paymentInfo}</span>
           </div>
@@ -89,6 +93,9 @@ $(document).ready(function() {
     console.log(person);
 
     const nextMonth = quotesMap[person.paymentType].find(x => x >= new Date().getMonth() + 1);
+    const room = window.rooms[person.roomId];
+
+    const roomates = window.resort.filter(p => p.roomId === person.roomId && p.name !== person.name).map(p => p.name);
 
     const missingMonths = quotesMap[person.paymentType].filter(x => x > nextMonth);
     dataHtml = template.replace(/@\{(\w+)\}/g, (match, g1) => {
@@ -98,7 +105,7 @@ $(document).ready(function() {
         case 'paymentInfo':
           return `${person.paymentType} cuotas`;
         case 'roomType':
-          return roomTypes[person.roomType];
+          return roomTypes[room.type];
         case 'month':
           return getMonthName(nextMonth);
         case 'pendingAmount':
@@ -107,6 +114,8 @@ $(document).ready(function() {
           return missingMonths.length ? `te faltarían ${missingMonths.length} cuotas: ` : 'ya.';
         case 'missingMonths':
           return missingMonths.length ? 'A pagar en ' + missingMonths.map(m => getMonthName(m)).join(', ') : '';
+        case 'roomates':
+          return roomates.length ? `Junto con ${roomates.join(', ')}` : '';
       }
     });
 
