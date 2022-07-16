@@ -103,7 +103,7 @@ $(document).ready(function() {
 
     const roomates = window.resort.filter(p => p.roomId === person.roomId && p.name !== person.name).map(p => p.name);
 
-    const missingMonths = quotesMap[person.paymentType].filter(x => x > nextMonth);
+    const missingMonths = person.pendingPayments.filter(x => quotesMap[person.paymentType].includes(x));
     dataHtml = template.replace(/@\{(\w+)\}/g, (match, g1) => {
       switch (g1) {
         case 'name':
@@ -126,11 +126,11 @@ $(document).ready(function() {
     });
 
     dataContainer.innerHTML = dataHtml;
-    $('.btn btn-1').click(() => {
+    $('.btn-1').click(() => {
       console.log('clicked')
       navigator.clipboard.writeText('30195400016').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
     });
-    $('.btn btn-2').click(() => {
+    $('.btn-2').click(() => {
       console.log('clicked')
       navigator.clipboard.writeText('40224013710').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
     });
