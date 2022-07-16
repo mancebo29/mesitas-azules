@@ -1,7 +1,10 @@
+const reserveCost = 1000.00;
+
 const paymentInfo = {
   '1': 14567.20,
   '2': 11231.20,
-  '3': 10341.60
+  '3': 10341.60,
+  '4': 22351.00
 };
 
 const quotesMap = {
@@ -15,6 +18,7 @@ const roomTypes = {
   '1': 'Sencilla',
   '2': 'Doble',
   '3': 'Triple',
+  '4': 'Sencilla Swing Up'
 }
 
 $(document).ready(function() {
@@ -78,9 +82,11 @@ $(document).ready(function() {
           <p>BHD LEON</p>
           <p>Nombre: Romer Diaz</p>
           <div class="inline">
-            <span>Cta de ahorro: 30195400016</span><button class="btn">Copiar</button>
+            <span>Cta de ahorro: 30195400016</span><button class="btn btn-1">Copiar</button>
           </div>
-          <p>ID: 402-2401-371-0</p>
+          <div class="inline">
+            <span>ID: 402-2401-371-0</span><button class="btn btn-2">Copiar</button>
+          </div>
         </div>
 `;
 
@@ -109,7 +115,7 @@ $(document).ready(function() {
         case 'month':
           return getMonthName(nextMonth);
         case 'pendingAmount':
-          return formatter.format(paymentInfo[person.roomType] / person.paymentType);
+          return formatter.format((paymentInfo[person.roomType] - reserveCost)/ person.paymentType);
         case 'quotesCount':
           return missingMonths.length ? `te faltarían ${missingMonths.length} cuotas: ` : 'ya.';
         case 'missingMonths':
@@ -120,9 +126,13 @@ $(document).ready(function() {
     });
 
     dataContainer.innerHTML = dataHtml;
-    $('.btn').click(() => {
+    $('.btn btn-1').click(() => {
       console.log('clicked')
       navigator.clipboard.writeText('30195400016').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
+    });
+    $('.btn btn-2').click(() => {
+      console.log('clicked')
+      navigator.clipboard.writeText('40224013710').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
     });
   });
 });
