@@ -224,7 +224,7 @@ window.resort = [
     "roomId": 14,
     "paymentType": 6,
     "pendingPayments" : [7, 8, 9, 10],
-    "totalPaid": 0
+    "totalPaid": 4447.00
   },
   {
     "name": "Lisbeth Toribio",
