@@ -21,6 +21,20 @@ const roomTypes = {
   '4': 'Sencilla Swing Up'
 }
 
+const calculateRemainingDebt = (totalAmount, reserveCost, totalPaid) => {
+  let totalDebt = totalAmount;
+
+  if (reserveCost && reserveCost > 0) {
+    totalDebt -= reserveCost;
+  }
+
+  if (totalPaid && totalPaid > 0) {
+    totalDebt -= totalPaid;
+  }
+
+  return totalDebt;
+}
+
 $(document).ready(function() {
   const dataContainer = document.querySelector('.data');
   const select = $('#nameSelector');
@@ -71,24 +85,34 @@ $(document).ready(function() {
             <span>@{paymentInfo}</span>
           </div>
           <div class="entry">
-            <label>Tienes hasta <span>@{month}</span> para pagar: </label>
-            <span class="amount">@{pendingAmount}</span>
+            <label>Monto total</label>
+            <span class="amount">@{totalAmount}</span>
           </div>
           <div class="entry">
-            <label>Después de ahí @{quotesCount} @{missingMonths}</label>
+            <label>Total abonado</label>
+            <span class="amount">@{totalPaid}</span>
+          </div>
+          <div class="entry">
+            @{pendingPayment}
+          </div>
+          <div class="entry">
+            <label>@{quotesCount}</label>
+          </div>
+          <div class="entry">
+            @{pendingAmount}
           </div>
         </div>
         <div class="accountInfo">
           <p>BHD LEON</p>
           <p>Nombre: Romer Diaz</p>
           <div class="inline">
-            <span>Cta de ahorro: 30195400016</span><button class="btn btn-1">Copiar</button>
+            <span>Cta de ahorro: 30195400016</span><button data-copy="30195400016" class="btn btn-1">Copiar</button>
           </div>
           <div class="inline">
-            <span>ID: 402-2401-371-0</span><button class="btn btn-2">Copiar</button>
+            <span>ID: 402-2401-371-0</span><button data-copy="40224013710" class="btn btn-2">Copiar</button>
           </div>
         </div>
-`;
+  `;
 
   select.change((e) => {
     const person = window.resort.find(p => p.name === e.target.value);
@@ -101,7 +125,7 @@ $(document).ready(function() {
     const nextMonth = quotesMap[person.paymentType].find(x => x >= new Date().getMonth() + 1);
     const room = window.rooms[person.roomId];
 
-    const roomates = window.resort.filter(p => p.roomId === person.roomId && p.name !== person.name).map(p => p.name);
+    const roommates = window.resort.filter(p => p.roomId === person.roomId && p.name !== person.name).map(p => p.name);
 
     const missingMonths = person.pendingPayments.filter(x => quotesMap[person.paymentType].includes(x));
     dataHtml = template.replace(/@\{(\w+)\}/g, (match, g1) => {
@@ -112,27 +136,38 @@ $(document).ready(function() {
           return `${person.paymentType} cuotas`;
         case 'roomType':
           return roomTypes[room.type];
-        case 'month':
-          return getMonthName(nextMonth);
-        case 'pendingAmount':
-          return formatter.format((paymentInfo[person.roomType] - reserveCost)/ person.paymentType);
+        case 'totalAmount':
+          return formatter.format(paymentInfo[person.roomType]);
+        case 'totalPaid':
+          return formatter.format(person.totalPaid);
+        case 'pendingPayment':
+          return missingMonths.length
+            ? `<label>Tienes hasta <span>${getMonthName(nextMonth)}</span> para pagar una cuota de: </label>
+               <span class="amount">${formatter.format(calculateRemainingDebt(paymentInfo[person.roomType], reserveCost)/ person.paymentType)}</span>`
+            : `Ya pagaste todo. Felicidades!. `;
         case 'quotesCount':
-          return missingMonths.length ? `te faltarían ${missingMonths.length} cuotas: ` : 'ya.';
-        case 'missingMonths':
-          return missingMonths.length ? 'A pagar en ' + missingMonths.map(m => getMonthName(m)).join(', ') : '';
+          return missingMonths.length
+            ? `Después de ahí te faltarían ${missingMonths.length} cuotas: ${missingMonths.map(m => getMonthName(m)).join(', ')}.`
+            : 'Nos vemos en el resort :D';
         case 'roomates':
-          return roomates.length ? `Junto con ${roomates.join(', ')}` : '';
+          return roommates.length
+            ? `Junto con ${roommates.join(', ')}`
+            : ''
+        case 'pendingAmount':
+          let totalDebt = calculateRemainingDebt(paymentInfo[person.roomType], null, person.totalPaid);
+
+          return totalDebt > 0
+            ? `<label> Puedes terminar de pagar todo, abonando </label><span class="amount">${formatter.format(totalDebt)}</span>`
+            : totalDebt < 0
+              ? `<label> Barbaro te pasaste, en octubre veremos para pagarte lo siguiente: </label><span class="amount">${formatter.format(totalDebt)}</span>`
+              : '';
       }
     });
 
     dataContainer.innerHTML = dataHtml;
-    $('.btn-1').click(() => {
+    $('.btn').click((e) => {
       console.log('clicked')
-      navigator.clipboard.writeText('30195400016').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
-    });
-    $('.btn-2').click(() => {
-      console.log('clicked')
-      navigator.clipboard.writeText('40224013710').then(() => alert('copiado')).catch(() => alert('no se puede xD'));
+      navigator.clipboard.writeText($(e.target).data('copy')).then(() => alert('copiado')).catch(() => alert('no se puede xD'));
     });
   });
 });
