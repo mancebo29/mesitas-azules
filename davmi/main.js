@@ -5,7 +5,7 @@ const dateOfEvent = new Date(2022, 9, 8);
 const currentDate = new Date();
 const days = Math.ceil((dateOfEvent - currentDate) / (1000*60*60*24));
 
-document.title = `${days} Días para el resort`;
+document.title = `${days} Días para que Davmi se vaya :c`;
 description.setAttribute('content', `Faltan ${days} Días y contando`);
 if (days > 0) {
   textWrapper.innerHTML = textWrapper.textContent.replace(/\$\{(\w+)\}/g, days.toString());
