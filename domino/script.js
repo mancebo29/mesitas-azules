@@ -33,7 +33,7 @@ $(document).ready(function() {
         const element = $(e);
         if (element.text() !== '0') {
           let score = +element.text();
-          totals[i - 1] -= score;
+          totals[i] -= score;
         }
       });
       td.parent().remove();
