@@ -33,17 +33,15 @@ $(document).ready(function() {
       return;
     }
     const row = $('<tr>');
-    const td1 = $('<td class="h3">');
-    const td2 = $('<td class="h3">');
-    const td3 = $('<td class="h3">');
-    const td4 = $('<td class="h3">');
-    const a = $('<a class="h3">X</a>');
-    td1.text('');
+    const td2 = $('<td class="h4">');
+    const td3 = $('<td class="h4">');
+    const td4 = $('<td class="h4">');
+    const a = $('<a class="h4">X</a>');
     td2.text(Number(!index) && score);
     td3.text(Number(!!index) && score);
     td4.append(a);
     a.click(removeRow);
-    row.append(td1, td2, td3, td4);
+    row.append(td2, td3, td4);
     tbody.append(row);
 
     totals[index] += +score;
