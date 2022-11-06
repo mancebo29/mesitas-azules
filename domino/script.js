@@ -3,14 +3,27 @@ $(document).ready(function() {
   const totalTr1 = $('#total1');
   const totalTr2 = $('#total2');
 
+  const BONUS = 30;
+
   let totals = [0, 0];
 
   const updateTotals = () => {
     if (totals[0] >= 200 || totals[1] >= 200) {
-      alert('Se acabó');
+      alert('Pasó');
     }
     totalTr1.text(totals[0]);
     totalTr2.text(totals[1]);
+  }
+
+  function newGame() {
+    totals = [0, 0];
+    updateTotals();
+    tbody.html('');
+  }
+
+  function giveBonus(i) {
+    handleScoreInput(BONUS, i);
+    updateTotals();
   }
 
   function removeRow() {
@@ -62,5 +75,19 @@ $(document).ready(function() {
       handleScoreInput(score, 1);
       $(this).val('');
     }
+  });
+
+  $('#newGame').click(function (e) {
+    if (confirm("Comenzar una nueva?")) {
+      newGame();
+    }
+  });
+
+  $('#selfBonus').click(function (e) {
+    giveBonus(0);
+  });
+
+  $('#otherBonus').click(function (e) {
+    giveBonus(1);
   });
 });
