@@ -6,74 +6,92 @@ $(document).ready(function() {
   const BONUS = 30;
 
   let totals = [0, 0];
+  let scores = [];
 
   const updateTotals = () => {
+    tbody.html('');
+    totals = [0, 0];
+    for (let i = 0; i < scores.length; i++) {
+      const [score1, score2] = scores[i];
+      const row = $('<tr>');
+      const td2 = $('<td class="h4">');
+      const td3 = $('<td class="h4">');
+      const td4 = $('<td class="h4">');
+      const a = $('<a class="h4">X</a>');
+      td2.text(score1);
+      td3.text(score2);
+      td4.append(a);
+      a.click(removeRow.bind(null, i));
+      row.append(td2, td3, td4);
+      tbody.append(row);
+
+      totals[0] += +score1;
+      totals[1] += +score2;
+    }
+
     if (totals[0] >= 200 || totals[1] >= 200) {
       alert('Pasó');
     }
     totalTr1.text(totals[0]);
     totalTr2.text(totals[1]);
+    saveGame();
   }
 
   function newGame() {
-    totals = [0, 0];
-    updateTotals();
-    tbody.html('');
-  }
-
-  function giveBonus(i) {
-    handleScoreInput(BONUS, i);
+    scores = [];
     updateTotals();
   }
 
-  function removeRow() {
-    if (confirm('Eliminar esta fila?')) {
-      const td = $(this).parent();
-      td.siblings().each((i, e) => {
-        const element = $(e);
-        if (element.text() !== '0') {
-          let score = +element.text();
-          totals[i] -= score;
-        }
-      });
-      td.parent().remove();
+  function loadGame() {
+    const previousScore = JSON.parse(localStorage.getItem('domino'));
+    if (Array.isArray(previousScore) && previousScore[0] && previousScore[1]) {
+      scores = previousScore;
+      console.log(scores);
       updateTotals();
     }
   }
 
-  const handleScoreInput = (score, index) => {
-    if (!score) {
+  function saveGame() {
+    localStorage.setItem('domino', JSON.stringify(scores));
+  }
+
+  function giveBonus(i) {
+    handleScoreInput(Number(!i) && BONUS, Number(!!i) && BONUS);
+    updateTotals();
+  }
+
+  function removeRow(i) {
+    if (confirm('Eliminar esta fila?')) {
+      scores.splice(i, 1);
+      updateTotals();
+    }
+  }
+
+  const handleScoreInput = (score1, score2) => {
+    if (!score1 && !score2) {
       return;
     }
-    const row = $('<tr>');
-    const td2 = $('<td class="h4">');
-    const td3 = $('<td class="h4">');
-    const td4 = $('<td class="h4">');
-    const a = $('<a class="h4">X</a>');
-    td2.text(Number(!index) && score);
-    td3.text(Number(!!index) && score);
-    td4.append(a);
-    a.click(removeRow);
-    row.append(td2, td3, td4);
-    tbody.append(row);
-
-    totals[index] += +score;
+    scores.push([score1, score2]);
     updateTotals();
   }
 
   $('#score1').keyup(function (e) {
-    if (e.keyCode === 13) {
-      const score = $(this).val();
-      handleScoreInput(score, 0);
+    if (e.keyCode === 13 || e.keyCode === 9) {
+      const score1 = $(this).val();
+      const score2 = $('#score2').val();
+      handleScoreInput(score1 || 0, score2 || 0);
       $(this).val('');
+      $('#score2').val('');
     }
   });
 
   $('#score2').keyup(function (e) {
-    if (e.keyCode === 13) {
-      const score = $(this).val();
-      handleScoreInput(score, 1);
+    if (e.keyCode === 13 || e.keyCode === 9) {
+      const score2 = $(this).val();
+      const score1 = $('#score1').val();
+      handleScoreInput(score1 || 0, score2 || 0);
       $(this).val('');
+      $('#score1').val('');
     }
   });
 
@@ -90,4 +108,6 @@ $(document).ready(function() {
   $('#otherBonus').click(function (e) {
     giveBonus(1);
   });
+
+  loadGame();
 });
