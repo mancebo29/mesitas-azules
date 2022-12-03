@@ -11,7 +11,7 @@
       "src": "/images/logo.svg",
       "type": "image/svg+xml",
       "sizes": "512x512"
-    },
+    }
   ],
   "display": "fullscreen",
   "prefer_related_applications": false,
