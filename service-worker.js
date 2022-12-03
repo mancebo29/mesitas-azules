@@ -3,7 +3,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', async function() {
     try {
       const registration = await navigator.serviceWorker.register(
-        './sw.js',
+        'sw.js',
         {
           scope: '/domino',
         }
