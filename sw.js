@@ -59,8 +59,8 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('install', (event) => {
   event.waitUntil(
     addResourcesToCache([
-      './index.html',
-      './script.js',
+      './domino/index.html',
+      './domino/script.js',
     ])
   );
 });
