@@ -5,7 +5,7 @@ if ('serviceWorker' in navigator) {
       const registration = await navigator.serviceWorker.register(
         'sw.js',
         {
-          scope: '/',
+          scope: '/domino',
         }
       );
       if (registration.installing) {

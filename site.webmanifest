@@ -8,8 +8,8 @@
       "sizes": "192x192"
     },
     {
-      "src": "/img/logo.svg",
-      "type": "image/svg+xml",
+      "src": "/img/logo.png",
+      "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
     }
