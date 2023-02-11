@@ -60,6 +60,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     addResourcesToCache([
       './domino/index.html',
+      './domino/settings.html',
       './domino/script.js',
     ])
   );
