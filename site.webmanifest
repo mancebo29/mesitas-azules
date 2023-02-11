@@ -18,6 +18,5 @@
   "display": "fullscreen",
   "prefer_related_applications": false,
   "start_url": "/domino",
-  "background_color": "#fafafa",
   "theme_color": "#fafafa"
 }
