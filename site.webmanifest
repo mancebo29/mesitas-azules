@@ -1,6 +1,7 @@
 {
   "short_name": "Mesitas Azules",
   "name": "Mesitas Azules",
+  "description": "El PWA de las Mesitas Azules",
   "icons": [
     {
       "src": "/img/logo.svg",

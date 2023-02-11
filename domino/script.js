@@ -2,13 +2,20 @@ $(document).ready(function() {
   const tbody = $('#tbody');
   const totalTr1 = $('#total1');
   const totalTr2 = $('#total2');
+  const DEFAULT_SETTINGS = {
+    bonus: 30,
+    name1: 'Nosotros',
+    name2: 'Ellos',
+    limit: 200,
+  };
 
-  const BONUS = 30;
+  let settings = DEFAULT_SETTINGS;
 
   let totals = [0, 0];
   let scores = [];
 
   const updateTotals = () => {
+    const limit = settings.limit;
     tbody.html('');
     totals = [0, 0];
     for (let i = 0; i < scores.length; i++) {
@@ -29,7 +36,7 @@ $(document).ready(function() {
       totals[1] += +score2;
     }
 
-    if (totals[0] >= 200 || totals[1] >= 200) {
+    if (totals[0] >= limit || totals[1] >= limit) {
       alert('Pasó');
     }
     totalTr1.text(totals[0]);
@@ -43,6 +50,7 @@ $(document).ready(function() {
   }
 
   function loadGame() {
+    loadSettings();
     const previousScore = JSON.parse(localStorage.getItem('domino'));
     if (Array.isArray(previousScore) && previousScore[0] && previousScore[1]) {
       scores = previousScore;
@@ -56,8 +64,8 @@ $(document).ready(function() {
   }
 
   function giveBonus(i) {
-    handleScoreInput(Number(!i) && BONUS, Number(!!i) && BONUS);
-    updateTotals();
+    const bonus = settings.bonus;
+    handleScoreInput(Number(!i) && bonus, Number(!!i) && bonus);
   }
 
   function removeRow(i) {
@@ -73,6 +81,28 @@ $(document).ready(function() {
     }
     scores.push([score1, score2]);
     updateTotals();
+  }
+
+  const closeSettings = () => {
+    $('#main').removeClass('d-none');
+    $('#settings').addClass('d-none');
+  }
+
+  const updateSettings = () => {
+    $('#selfBonus').text(settings.bonus);
+    $('#otherBonus').text(settings.bonus);
+    $('#nameDisplay1').text(settings.name1);
+    $('#nameDisplay2').text(settings.name2);
+  }
+
+  const saveSettings = () => {
+    localStorage.setItem('domino-settings', JSON.stringify(settings));
+    updateSettings();
+  }
+
+  const loadSettings = () => {
+    settings = JSON.parse(localStorage.getItem('domino-settings'));
+    updateSettings();
   }
 
   $('#score1').keyup(function (e) {
@@ -107,6 +137,45 @@ $(document).ready(function() {
 
   $('#otherBonus').click(function (e) {
     giveBonus(1);
+  });
+
+  $('#settingsBtn').click(function(e) {
+    $('#main').addClass('d-none');
+    $('#settings').removeClass('d-none');
+
+    $('#team1').val(settings.name1);
+    $('#team2').val(settings.name2);
+    $('#limit').val(settings.limit);
+    $('#bonus').val(settings.bonus);
+  });
+
+  $('#cancel').click(function() {
+    closeSettings();
+  });
+
+  $('#defaults').click(function() {
+    if (confirm('Usar la configuración por defecto')) {
+      settings = DEFAULT_SETTINGS;
+      saveSettings();
+      closeSettings();
+    }
+  });
+
+  $('#save').click(function() {
+    const name1 = $('#team1').val() || DEFAULT_SETTINGS.name1;
+    const name2 = $('#team2').val() || DEFAULT_SETTINGS.name2;
+    const limit = $('#limit').val() || DEFAULT_SETTINGS.limit;
+    const bonus = $('#bonus').val() || DEFAULT_SETTINGS.bonus;
+
+    settings = {
+      name1,
+      name2,
+      limit,
+      bonus,
+    }
+
+    saveSettings();
+    closeSettings();
   });
 
   loadGame();

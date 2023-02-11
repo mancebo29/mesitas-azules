@@ -12,17 +12,20 @@
   <script src="script.js"></script>
 </head>
 <body>
-  <div class="main p-5">
+  <div id="main" class="main p-5">
     <div class="row">
+      <a id="settingsBtn" style="width: 3em" href="#" class="position-absolute top-0 end-0 p-2">
+        <img style="width: 2em" src="../img/settings-icon.svg">
+      </a>
       <div class="col-12 text-center mb-3">
         <h1>Mesitas Domino Counter</h1>
       </div>
       <div class="col-6">
-        <h3 class="mb-2 text-center">Nosotros</h3>
+        <h3 id="nameDisplay1" class="mb-2 text-center">Nosotros</h3>
         <input type="number" class="form-control form-control-lg" id="score1">
       </div>
       <div class="col-6">
-        <h3 class="mb-2 text-center">Ellos</h3>
+        <h3 id="nameDisplay2" class="mb-2 text-center">Ellos</h3>
         <input type="number" class="form-control form-control-lg" id="score2">
       </div>
     </div>
@@ -53,6 +56,35 @@
       <button class="btn btn-lg btn-danger" id="otherBonus">
         +30
       </button>
+    </div>
+  </div>
+  <div id="settings" class="main d-none p-4">
+    <div class="row my-4">
+      <div class="col-6">
+        <h3 class="mb-2 text-center">Nombre equipo 1</h3>
+        <input type="text" class="form-control form-control-lg" id="team1">
+      </div>
+      <div class="col-6">
+        <h3 class="mb-2 text-center">Nombre equipo 2</h3>
+        <input type="text" class="form-control form-control-lg" id="team2">
+      </div>
+    </div>
+    <div class="row my-4 d-flex align-items-center">
+      <div class="col-6">
+        <h3 class="mb-2 text-center">Límite</h3>
+        <input type="number" class="form-control form-control-lg" id="limit">
+      </div>
+      <div class="col-6">
+        <h3 class="mb-2 text-center">Bonus</h3>
+        <input type="number" class="form-control form-control-lg" id="bonus">
+      </div>
+    </div>
+    <div class="row my-4">
+      <div class="col-12 d-flex justify-content-around">
+        <button class="btn btn-danger" id="cancel">Cancel</button>
+        <button class="btn btn-primary" id="defaults">Defaults</button>
+        <button class="btn btn-success" id="save">Save</button>
+      </div>
     </div>
   </div>
 </body>
