@@ -4,12 +4,13 @@
   "description": "El PWA de las Mesitas Azules",
   "icons": [
     {
-      "src": "/img/logo.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192"
+      "src": "/img/icon192.svg",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable"
     },
     {
-      "src": "/img/logo.png",
+      "src": "/img/icon512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
