@@ -102,7 +102,12 @@ $(document).ready(function() {
 
   const loadSettings = () => {
     settings = JSON.parse(localStorage.getItem('domino-settings'));
-    updateSettings();
+    if (!settings) {
+      settings = DEFAULT_SETTINGS;
+      saveSettings();
+    } else {
+      updateSettings();
+    }
   }
 
   $('#score1').keyup(function (e) {
