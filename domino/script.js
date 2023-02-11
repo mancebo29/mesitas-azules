@@ -84,8 +84,7 @@ $(document).ready(function() {
   }
 
   const closeSettings = () => {
-    $('#main').removeClass('d-none');
-    $('#settings').addClass('d-none');
+    location.href = './index.html'
   }
 
   const updateSettings = () => {
@@ -93,6 +92,13 @@ $(document).ready(function() {
     $('#otherBonus').text(settings.bonus);
     $('#nameDisplay1').text(settings.name1);
     $('#nameDisplay2').text(settings.name2);
+  }
+
+  const populateSettings = () => {
+    $('#team1').val(settings.name1);
+    $('#team2').val(settings.name2);
+    $('#limit').val(settings.limit);
+    $('#bonus').val(settings.bonus);
   }
 
   const saveSettings = () => {
@@ -144,16 +150,6 @@ $(document).ready(function() {
     giveBonus(1);
   });
 
-  $('#settingsBtn').click(function(e) {
-    $('#main').addClass('d-none');
-    $('#settings').removeClass('d-none');
-
-    $('#team1').val(settings.name1);
-    $('#team2').val(settings.name2);
-    $('#limit').val(settings.limit);
-    $('#bonus').val(settings.bonus);
-  });
-
   $('#cancel').click(function() {
     closeSettings();
   });
@@ -184,4 +180,5 @@ $(document).ready(function() {
   });
 
   loadGame();
+  populateSettings();
 });
