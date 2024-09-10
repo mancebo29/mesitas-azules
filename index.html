@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mesitas Azules - Home</title>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+
+    .index-container {
+      display: flex;
+      flex-direction: column;
+      padding: 32px 15%;
+    }
+
+    .title-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 8px;
+      font-size: 2.5rem;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      padding: 6px;
+      display: flex;
+      width: 120px;
+      text-decoration: none;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card-logo {
+      padding: 12px;
+      border-radius: 50%;
+      margin: 12px 0;
+      width: 120px;
+      height: 120px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      background-color: #337ce5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card-title {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: white;
+    }
+
+    .card-label {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1a1919;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="index-container">
+    <div class="title-container">
+      <h1>Mesitas Azules</h1>
+    </div>
+    <div id="cardsContainer" class="cards-container">
+    </div>
+  </div>
+  <script>
+    (function() {
+      const routes = {
+        'domino': 'Dominó',
+        'rules': 'Reglas',
+        'uno': 'Uno Cool Rules',
+        'monikers': 'Monikers demo',
+        'results': 'Miss y Mister mestias',
+        'movie-night': 'Movie Night',
+        'elections': 'Últimas elecciones',
+        'elections-august-2021': 'Elecciones Agosto 2021',
+        'elections-may-2021': 'Elections Mayo 2021',
+        'resort': 'Resort [outdated]',
+      }
+
+      console.log(routes);
+      const createCard = (href, title) => {
+        const card = document.createElement('a');
+        card.classList.add('card');
+        card.href = `/${href}`;
+
+        const logo = document.createElement('div');
+        logo.classList.add('card-logo');
+        card.append(logo);
+
+        const titleElement = document.createElement('h1');
+        const [...initials] = title.match(/(?<=^|\s)\w/g);
+        titleElement.innerText = initials.join('').toUpperCase().substring(0, 3);
+        titleElement.classList.add('card-title');
+        logo.append(titleElement);
+
+        const label = document.createElement('label');
+        label.innerText = title;
+        label.classList.add('card-label');
+        card.append(label);
+
+        return card;
+      }
+
+      const cardsContainer = document.getElementById('cardsContainer');
+      for (let [route, title] of Object.entries(routes)) {
+        cardsContainer.append(createCard(route, title))
+      }
+    })();
+  </script>
+</body>
+</html>
