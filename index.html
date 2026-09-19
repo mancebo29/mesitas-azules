@@ -2,68 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#337ce5">
   <title>Mesitas Azules - Home</title>
+  <link rel="icon" href="/favicon.ico">
   <style>
+    :root {
+      --blue: #337ce5;
+      --blue-dark: #1f5fbf;
+      --blue-deep: #163f80;
+      --cloth-a: #337ce5;
+      --ink: #163f80;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: "Roboto", sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Roboto", "Segoe UI", sans-serif;
+      color: var(--ink);
+      /* Blue gingham tablecloth */
+      background-color: var(--cloth-a);
+      background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.28) 50%, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.28) 50%, transparent 50%);
+      background-size: 56px 56px;
     }
 
     .index-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 16px 64px;
       display: flex;
       flex-direction: column;
-      padding: 32px 20%;
       align-items: center;
     }
 
+    /* Menu-board style header */
     .title-container {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 8px;
-      font-size: 2.5rem;
+      max-width: 620px;
+      margin-bottom: 48px;
+      padding: 28px 24px 32px;
+      text-align: center;
+      background: #fff;
+      border: 4px solid var(--blue-deep);
+      border-radius: 18px;
+      box-shadow: rgba(22, 63, 128, 0.35) 0 12px 30px;
+    }
+
+    .title-container h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 0.02em;
+      color: var(--blue-deep);
+    }
+
+    .title-container p {
+      margin: 8px 0 0;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--blue-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
     }
 
     .cards-container {
-      display: flex;
-      gap: 60px;
-      flex-wrap: wrap;
-      justify-content: center;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 32px 24px;
+      justify-items: center;
     }
 
+    /* Each link is a "place setting" on the table */
     .card {
-      padding: 6px;
+      width: 150px;
+      padding: 10px;
       display: flex;
-      width: 120px;
-      text-decoration: none;
       flex-direction: column;
       align-items: center;
+      text-decoration: none;
+      transition: transform 0.18s ease;
     }
 
+    .card:hover,
+    .card:focus-visible {
+      transform: translateY(-6px);
+      outline: none;
+    }
+
+    /* The plate */
     .card-logo {
-      padding: 12px;
+      width: 118px;
+      height: 118px;
       border-radius: 50%;
-      margin: 12px 0;
-      width: 120px;
-      height: 120px;
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      background-color: #337ce5;
       display: flex;
       align-items: center;
       justify-content: center;
+      background: var(--blue);
+      /* white rim like a dinner plate */
+      border: 6px solid #fff;
+      box-shadow:
+        rgba(22, 63, 128, 0.45) 0 8px 18px,
+        inset rgba(255, 255, 255, 0.35) 0 3px 6px;
+      transition: box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    .card:hover .card-logo,
+    .card:focus-visible .card-logo {
+      background: var(--blue-dark);
+      box-shadow:
+        rgba(22, 63, 128, 0.55) 0 14px 26px,
+        inset rgba(255, 255, 255, 0.35) 0 3px 6px;
     }
 
     .card-title {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: white;
+      margin: 0;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #fff;
+      text-shadow: rgba(22, 63, 128, 0.4) 0 2px 3px;
     }
 
+    /* The label sits on a folded napkin / place card */
     .card-label {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #1a1919;
+      margin-top: 14px;
+      padding: 7px 14px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--blue-deep);
       text-align: center;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(22, 63, 128, 0.25) 0 4px 10px;
+    }
+
+    @media (max-width: 480px) {
+      .title-container h1 {
+        font-size: 2.1rem;
+      }
     }
   </style>
 </head>
@@ -71,6 +152,7 @@
   <div class="index-container">
     <div class="title-container">
       <h1>Mesitas Azules</h1>
+      <p>Pull up a chair</p>
     </div>
     <div id="cardsContainer" class="cards-container">
     </div>
@@ -79,8 +161,7 @@
     (function() {
       const routes = {
         'domino': 'Dominó',
-        'rules': 'Reglas (dictadura)',
-        'original-rules': 'Reglas viejas',
+        'rules': 'Reglas',
         'uno': 'Uno Cool Rules',
         'monikers': 'Monikers demo',
         'results': 'Miss y Mister mestias',
@@ -91,7 +172,6 @@
         'resort': 'Resort [outdated]',
       }
 
-      console.log(routes);
       const createCard = (href, title) => {
         const card = document.createElement('a');
         card.classList.add('card');
